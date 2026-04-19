@@ -170,6 +170,7 @@ a  { color: inherit; }
     display: flex;
     align-items: center;
     overflow: hidden;
+    background: var(--bg-alt);
 }
 
 .hero-bg {
