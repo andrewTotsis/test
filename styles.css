@@ -194,23 +194,22 @@ a  { color: inherit; }
 }
 
 .hero-avatar-wrap {
-    position: relative;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    overflow: hidden;
     flex-shrink: 0;
+    border: 4px solid var(--white);
+    box-shadow: 0 0 0 2px var(--border), 0 8px 32px rgba(26,24,22,0.14);
 }
 
 .hero-avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 148px;
+    height: 148px;
+    max-width: none;
     object-fit: cover;
     object-position: center top;
-    border: 4px solid var(--white);
-    box-shadow: 0 0 0 2px var(--border), 0 8px 32px rgba(26,24,22,0.14);
     display: block;
-}
-
-.hero-avatar-badge {
-    display: none; /* clean — badge is in the identity-text already */
 }
 
 .hero-identity-text {
@@ -1060,9 +1059,14 @@ a  { color: inherit; }
         gap: 20px;
     }
 
+    .hero-avatar-wrap {
+        width: 96px;
+        height: 96px;
+    }
+
     .hero-avatar {
-        width: 100px;
-        height: 100px;
+        width: 96px;
+        height: 96px;
     }
 
     .hero-stats {
